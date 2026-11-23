@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020" />
+      <stop offset="55%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#172033" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.18" cy="0.22" r="0.55">
+      <stop offset="0%" stop-color="#A8E6E1" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.85" cy="0.78" r="0.55">
+      <stop offset="0%" stop-color="#C4B5FD" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8E6E1" />
+      <stop offset="50%" stop-color="#A5C9FF" />
+      <stop offset="100%" stop-color="#C4B5FD" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glowA)" />
+  <rect width="1200" height="630" fill="url(#glowB)" />
+  <g stroke="#A5C9FF" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126" />
+    <line x1="0" y1="252" x2="1200" y2="252" />
+    <line x1="0" y1="378" x2="1200" y2="378" />
+    <line x1="0" y1="504" x2="1200" y2="504" />
+    <line x1="240" y1="0" x2="240" y2="630" />
+    <line x1="480" y1="0" x2="480" y2="630" />
+    <line x1="720" y1="0" x2="720" y2="630" />
+    <line x1="960" y1="0" x2="960" y2="630" />
+  </g>
+  <g stroke="url(#accent)" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M820 150 L940 210 L1060 170" />
+    <path d="M940 210 L990 340 L1100 400" />
+    <path d="M840 380 L990 340 L890 480" />
+  </g>
+  <g>
+    <circle cx="820" cy="150" r="6" fill="#A8E6E1" />
+    <circle cx="940" cy="210" r="8" fill="#C4B5FD" />
+    <circle cx="1060" cy="170" r="5" fill="#A5C9FF" />
+    <circle cx="990" cy="340" r="9" fill="#B8F2D8" />
+    <circle cx="840" cy="380" r="5" fill="#A8E6E1" />
+    <circle cx="1100" cy="400" r="6" fill="#C4B5FD" />
+    <circle cx="890" cy="480" r="6" fill="#A5C9FF" />
+  </g>
+  <rect x="84" y="138" width="96" height="3" fill="url(#accent)" rx="1.5" />
+  <text x="84" y="190" fill="#A8E6E1" font-family="monospace" font-size="18" letter-spacing="1.5">
+    SOFTWARE DEVELOPER · PYTHON ENGINEER · VFX PIPELINE DEVELOPER
+  </text>
+  <text x="84" y="286" fill="#F8FAFC" font-family="sans-serif" font-weight="700" font-size="68">
+    Ankit Dhanorkar
+  </text>
+  <text x="84" y="362" fill="#E2E8F0" font-family="sans-serif" font-weight="500" font-size="30">
+    Building Intelligent Software &amp; Creative Technology.
+  </text>
+  <text x="84" y="422" fill="#A7B0C3" font-family="sans-serif" font-size="21">
+    Python Applications · Django · PyQt/PySide · Nuke Pipeline Automation
+  </text>
+  <text x="84" y="544" fill="#A5C9FF" font-family="monospace" font-size="18">
+    ankitdhanorkar.com
+  </text>
+</svg>

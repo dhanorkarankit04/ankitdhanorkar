@@ -1,0 +1,127 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B1020" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    <meta name="author" content="{{ profile.name }}" />
+    <link rel="canonical" href="{{ canonical_url }}" />
+
+    <!-- Open Graph / LinkedIn Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ profile.name }} Portfolio" />
+    <meta property="og:url" content="{{ canonical_url }}" />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:image" content="{{ site_base_url }}{% static profile.og_image_static_path %}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page_title }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:image" content="{{ site_base_url }}{% static profile.og_image_static_path %}" />
+
+    <!-- Fonts: Space Grotesk, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Play CDN for zero-build static fidelity + Custom Design System Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {{ structured_data_json|safe }}
+    </script>
+  </head>
+  <body class="bg-[#0B1020] text-[#F8FAFC] antialiased selection:bg-[#A8E6E1]/25 selection:text-[#F8FAFC]">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="fixed top-0 inset-x-0 z-40 transition-colors duration-200 border-b border-transparent">
+      <div aria-hidden="true" class="h-[2px] w-full overflow-hidden">
+        <div id="scroll-progress-bar" class="h-full origin-left bg-gradient-to-r from-[#A8E6E1] via-[#A5C9FF] to-[#C4B5FD]" style="transform: scaleX(0);"></div>
+      </div>
+      <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-6 lg:px-8">
+        <a href="/" class="font-display text-lg font-semibold tracking-tight text-[#F8FAFC] whitespace-nowrap shrink-0">
+          {{ profile.name }}
+        </a>
+
+        <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-7">
+          <a href="/#about" class="nav-link-underline text-sm font-medium text-[#A7B0C3] hover:text-[#F8FAFC] whitespace-nowrap shrink-0">About</a>
+          <a href="/#skills" class="nav-link-underline text-sm font-medium text-[#A7B0C3] hover:text-[#F8FAFC] whitespace-nowrap shrink-0">Skills</a>
+          <a href="/#projects" class="nav-link-underline text-sm font-medium text-[#A7B0C3] hover:text-[#F8FAFC] whitespace-nowrap shrink-0">Projects</a>
+          <a href="/#experience" class="nav-link-underline text-sm font-medium text-[#A7B0C3] hover:text-[#F8FAFC] whitespace-nowrap shrink-0">Experience</a>
+          <a href="/#contact" class="nav-link-underline text-sm font-medium text-[#A7B0C3] hover:text-[#F8FAFC] whitespace-nowrap shrink-0">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="/#resume" class="hidden md:inline-flex items-center justify-center rounded-lg bg-[#A8E6E1] px-4 py-2 text-xs font-semibold text-[#0B1020] whitespace-nowrap shrink-0 hover:bg-[#B8F2D8] transition-colors">
+            Resume
+          </a>
+          <button
+            id="mobile-menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Open navigation menu"
+            class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#A5C9FF]/20 bg-[#172033]/80 text-[#F8FAFC] md:hidden"
+          >
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-nav-drawer" class="hidden md:hidden border-b border-[#A5C9FF]/15 bg-[#0B1020]/96 backdrop-blur-xl">
+        <nav aria-label="Mobile navigation" class="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-5">
+          <a href="/#about" class="mobile-nav-link flex min-h-[44px] items-center rounded-lg px-3 text-base font-medium text-[#A7B0C3] hover:bg-[#172033] hover:text-[#F8FAFC]">About</a>
+          <a href="/#skills" class="mobile-nav-link flex min-h-[44px] items-center rounded-lg px-3 text-base font-medium text-[#A7B0C3] hover:bg-[#172033] hover:text-[#F8FAFC]">Skills</a>
+          <a href="/#projects" class="mobile-nav-link flex min-h-[44px] items-center rounded-lg px-3 text-base font-medium text-[#A7B0C3] hover:bg-[#172033] hover:text-[#F8FAFC]">Projects</a>
+          <a href="/#experience" class="mobile-nav-link flex min-h-[44px] items-center rounded-lg px-3 text-base font-medium text-[#A7B0C3] hover:bg-[#172033] hover:text-[#F8FAFC]">Experience</a>
+          <a href="/#contact" class="mobile-nav-link flex min-h-[44px] items-center rounded-lg px-3 text-base font-medium text-[#A7B0C3] hover:bg-[#172033] hover:text-[#F8FAFC]">Contact</a>
+          <a href="/#resume" class="mobile-nav-link mt-3 flex min-h-[44px] items-center justify-center rounded-lg bg-[#A8E6E1] px-4 text-sm font-semibold text-[#0B1020]">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="border-t border-[#A5C9FF]/10 bg-[#0B1020] py-10">
+      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-6 sm:flex-row sm:items-center lg:px-8">
+        <div>
+          <p class="font-display text-sm font-semibold text-[#F8FAFC]">{{ profile.full_name }}</p>
+          <p class="mt-1 text-xs text-[#A7B0C3]">© {% now "Y" %} {{ profile.full_name }} · {{ profile.location }}</p>
+        </div>
+        <nav aria-label="Footer navigation" class="flex flex-wrap items-center gap-6 text-xs font-medium text-[#A7B0C3]">
+          <a href="/#about" class="hover:text-[#F8FAFC]">About</a>
+          <a href="/#skills" class="hover:text-[#F8FAFC]">Skills</a>
+          <a href="/#projects" class="hover:text-[#F8FAFC]">Projects</a>
+          <a href="/#experience" class="hover:text-[#F8FAFC]">Experience</a>
+          <a href="{{ profile.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="hover:text-[#A8E6E1]">LinkedIn</a>
+          {% if profile.github_url %}
+          <a href="{{ profile.github_url }}" target="_blank" rel="noopener noreferrer" class="hover:text-[#C4B5FD]">GitHub</a>
+          {% endif %}
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons + GSAP (lightweight CDN scripts for static export) -->
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script>
+      window.PORTFOLIO_ROLES = {{ animated_roles_json|safe }};
+    </script>
+    <script src="{% static 'portfolio/js/main.js' %}" defer></script>
+  </body>
+</html>
