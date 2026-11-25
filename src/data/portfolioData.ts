@@ -116,19 +116,19 @@ export const PROFILE: ProfileData = {
   heroSupportingText:
     'I design and develop custom Python applications, Nuke automation tools, automated file validation pipelines, and scalable workflow solutions bridging software engineering and high-end visual effects production.',
   aboutIntro:
-    'Developer experienced in Python scripting, custom production tools, Nuke automation, file validation, and workflow optimization. I build internal applications—including attendance tracking and vendor/client budget management tools—alongside reliable production pipeline tooling.',
+    'Python developer and VFX Pipeline TD with 16+ years in VFX production, specializing in pipeline automation, Nuke scripting, custom applications, file validation, and workflow optimization.',
   aboutPhilosophy:
-    'With extensive hands-on leadership experience as Head of Paint Department and Prep/Paint Supervisor across major international film and television productions, I understand production pressure first-hand. Currently serving as Pipeline Developer at Bubble Creations Digital Studio Pvt. Ltd., Pune while pursuing my Bachelor of Computer Applications (BCA, Semester 5) at Symbiosis International University, I combine engineering rigor with real-world operational empathy.',
-  currentOrganization: 'Bubble Creations Digital Studio Pvt. Ltd., Pune',
+    'Developed internal tools for shot workflows, automated validation, attendance tracking, and vendor/client budget management while bringing hands-on production leadership as a former Paint Lead, Paint Supervisor, and Prep Supervisor across major international film and television productions. Currently serving as Pipeline TD at Bubble Creations Digital Studios Pvt. Ltd., Pune while pursuing my Bachelor of Computer Applications (BCA, Semester 5) at Symbiosis International University.',
+  currentOrganization: 'Bubble Creations Digital Studios Pvt. Ltd., Pune',
   portraitSrc: assetUrl('assets/aistudio/Confident_tech_presenter_in_office_a6ac70be.png'),
   portraitAlt:
-    'Ankit Kishor Dhanorkar — Python Software Developer and VFX Pipeline Engineer',
+    'Ankit Kishor Dhanorkar — Python Software Developer and VFX Pipeline TD',
   portraitCaption:
     'Ankit Kishor Dhanorkar · Pune, India',
-  resumePdfUrl: assetUrl('assets/aistudio/Ankit_Dhanorkar_CV_2026_cc6d0b78.pdf'),
-  resumeFileName: 'Ankit_Dhanorkar_CV_2026.pdf',
+  resumePdfUrl: assetUrl('assets/aistudio/Ankit_Dhanorkar_Resume_49121bb1.pdf'),
+  resumeFileName: 'Ankit_Dhanorkar_Resume.pdf',
   careerSummary:
-    'Python Software Developer and VFX Pipeline Developer experienced in custom application engineering, Nuke automation, Maya plugin adaptation, Thinkbox Deadline workflows, automated shot/output validation, and technical department leadership across major international studio productions.',
+    'Python developer and VFX Pipeline TD with 16+ years in VFX production (Apr 2010 – Present), experienced in pipeline automation, Nuke scripting, Maya plugin maintenance, Thinkbox Deadline workflows, automated shot/output validation, custom internal applications, and production leadership across major international studio productions.',
   email: 'dhanorkarankit04@gmail.com',
   phone: '+91-9987962561',
   linkedinUrl: 'https://www.linkedin.com/in/ankit-dhanorkar-5653b939',
@@ -186,7 +186,7 @@ export const ABOUT_PILLARS: CapabilityPillar[] = [
     title: 'Department & Team Leadership',
     domain: 'Leadership & Systems',
     description:
-      'Proven leadership as Head of Paint Department and Prep/Paint Supervisor driving training, performance reviews, and cross-department delivery.',
+      'Proven leadership as Paint Lead, Paint Supervisor, and Prep Supervisor driving artist training, quality benchmarks, and cross-department delivery.',
   },
 ];
 
@@ -392,33 +392,33 @@ export const PROJECTS: ProjectItem[] = [
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    id: 'pipeline-developer-bubble',
-    role: 'Pipeline Developer',
-    organization: 'Bubble Creations Digital Studio Pvt. Ltd., Pune',
+    id: 'pipeline-td-bubble',
+    role: 'Pipeline TD',
+    organization: 'Bubble Creations Digital Studios Pvt. Ltd., Pune',
     period: 'Dec 2021 – Present',
     domainFocus: 'Python Software Engineering & VFX Pipeline Automation',
     summary:
-      'Developing Python-based Nuke automation tools, output validation systems, legacy Maya plugin adaptations, and custom internal applications supporting studio-wide production teams.',
+      'Building Python-based Nuke automation tools, gizmos, Maya plugin compatibility updates, automated server transfers, output validation systems, and custom internal applications supporting VFX production.',
     highlights: [
-      'Develop Python-based Nuke automation tools and gizmos for production workflows.',
-      'Adapt legacy Maya plugins for compatibility with newer software versions.',
+      'Build Python-based Nuke automation tools, gizmos, and custom applications supporting VFX production.',
+      'Maintain Maya plugin compatibility across newer studio software versions.',
       'Automate server transfers while preserving folder structures and file permissions.',
-      'Develop output validation tools for naming, frame ranges, resolution, zero-byte files, empty folders, and temporary files.',
+      'Validate output structure, frame ranges, file naming, resolution, empty or temporary files, and output integrity.',
       'Develop custom internal tools and support production teams with technical troubleshooting.',
     ],
   },
   {
-    id: 'prep-paint-supervisor-bubble',
-    role: 'Prep & Paint Supervisor (Head of Paint Department)',
-    organization: 'Bubble Creations Digital Studio Pvt. Ltd., Pune',
+    id: 'prep-supervisor-bubble',
+    role: 'Prep Supervisor',
+    organization: 'Bubble Creations Digital Studios Pvt. Ltd., Pune',
     period: 'Jan 2018 – Dec 2021',
     domainFocus: 'Department Leadership & Production Tooling',
     summary:
-      'Led paint department operations, artist training, and performance reviews while developing Nuke automation tools to eliminate repetitive production tasks on major Hollywood studio titles.',
+      'Led team operations and artist training, supported production troubleshooting, and built Nuke automation tools to eliminate repetitive tasks across major international film and television productions.',
     highlights: [
-      'Led department operations, artist onboarding, training, and performance reviews.',
-      'Developed Nuke tools and workflow automation to reduce repetitive manual tasks.',
-      'Coordinated quality benchmarks and cross-department production deliveries.',
+      'Led team operations, artist training, and department quality standards.',
+      'Supported production troubleshooting and built Nuke tools to reduce repetitive manual tasks.',
+      'Coordinated cross-department handoffs and production delivery schedules.',
     ],
     credits: [
       'Mission: Impossible',
@@ -432,41 +432,54 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     id: 'paint-supervisor-gener8',
     role: 'Paint Supervisor',
-    organization: 'GENER8, Pune',
-    period: 'Jan 2015 – Jul 2017',
+    organization: 'Gener8 Digital Media Corp, Pune',
+    period: 'Jul 2015 – Dec 2017',
     domainFocus: 'Stereoscopic Supervision & Quality Management',
     summary:
-      'Supervised stereoscopic paint execution and quality consistency across tentpole theatrical studio releases.',
+      'Supervised stereoscopic paint execution and quality consistency across major theatrical studio releases.',
     highlights: [
-      'Supervised stereoscopic paint workflows and final quality control.',
-      'Guided artists on complex stereo depth and clean-plate technical challenges.',
+      'Supervised stereoscopic paint workflows and final quality control on global tentpole features.',
+      'Guided artists through complex stereo depth and clean-plate technical challenges.',
     ],
     credits: ['Batman v Superman', 'The Jungle Book', 'Wonder Woman'],
   },
   {
-    id: 'paint-supervisor-roto-lead-bubble',
-    role: 'Paint Supervisor / Roto Team Lead',
-    organization: 'Bubble Creations Digital Studio',
-    period: 'Jan 2015 – Jul 2017',
-    domainFocus: 'Team Coordination & Cross-Department Workflows',
+    id: 'paint-lead-bubble',
+    role: 'Paint Lead',
+    organization: 'Bubble Creations Digital Studios Pvt. Ltd.',
+    period: 'Mar 2014 – Jul 2015',
+    domainFocus: 'Paint Workflow Coordination & Deliverables',
     summary:
-      'Coordinated paint and roto teams, aligning shot schedules and cross-department handoff workflows.',
+      'Coordinated paint workflows, artist teams, and production deliverables to meet studio quality and schedule milestones.',
     highlights: [
-      'Coordinated paint and roto artist teams to meet tight production milestones.',
-      'Streamlined cross-department handoffs and technical shot feedback.',
+      'Coordinated paint workflows, artists, and daily production deliverables.',
+      'Maintained consistent shot quality reviews and cross-department handoffs.',
     ],
   },
   {
-    id: 'roto-lead-prime-focus',
-    role: 'Roto Team Lead / Paint Artist',
-    organization: 'Prime Focus Studio, Mumbai',
-    period: 'Jan 2012 – Aug 2014',
+    id: 'roto-co-lead-bubble',
+    role: 'Roto Co-Lead',
+    organization: 'Bubble Creations Digital Studios Pvt. Ltd., Pune',
+    period: 'Mar 2013 – Mar 2014',
+    domainFocus: 'Rotoscope Production & Team Coordination',
+    summary:
+      'Supported VFX shot production through precision rotoscope work while co-leading daily team coordination.',
+    highlights: [
+      'Performed rotoscope tasks supporting VFX shot production schedules.',
+      'Assisted team coordination and shot review consistency across departments.',
+    ],
+  },
+  {
+    id: 'roto-paint-artist-prime-focus',
+    role: 'Roto & Paint Artist',
+    organization: 'Prime Focus, Mumbai',
+    period: 'Apr 2010 – Mar 2013',
     domainFocus: 'Stereoscopic & VFX Production',
     summary:
-      'Executed and led stereoscopic roto and paint work for major international theatrical VFX productions.',
+      'Executed stereoscopic and VFX roto and paint shots for major international theatrical productions.',
     highlights: [
-      'Delivered high-precision stereoscopic roto and paint shots for global studio releases.',
-      'Supported team coordination and shot quality consistency under theatrical schedules.',
+      'Worked on stereoscopic and VFX shot production for global studio releases.',
+      'Delivered high-precision roto and paint shots under theatrical delivery schedules.',
     ],
     credits: [
       'Thor: The Dark World',

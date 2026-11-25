@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ankitdhanorkar.com/sitemap.xml
+Sitemap: https://dhanorkarankit04.github.io/ankitdhanorkar/sitemap.xml

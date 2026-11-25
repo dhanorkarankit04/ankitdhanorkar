@@ -6,6 +6,7 @@ const NODE_ACCENTS = [
   { dot: 'bg-[#A5C9FF]', ring: 'border-[#A5C9FF]/60', text: 'text-[#A5C9FF]' },
   { dot: 'bg-[#B8F2D8]', ring: 'border-[#B8F2D8]/60', text: 'text-[#B8F2D8]' },
   { dot: 'bg-[#A8E6E1]', ring: 'border-[#A8E6E1]/60', text: 'text-[#A8E6E1]' },
+  { dot: 'bg-[#C4B5FD]', ring: 'border-[#C4B5FD]/60', text: 'text-[#C4B5FD]' },
 ];
 
 export function ExperienceSection() {
@@ -27,9 +28,10 @@ export function ExperienceSection() {
             Engineering &amp; Production Leadership
           </h2>
           <p className="mt-4 text-base text-[#A7B0C3]">
-            Career progression across Python pipeline engineering, technical
-            supervision, and department leadership at Bubble Creations Digital
-            Studio, GENER8, and Prime Focus Studio (2012 – Present).
+            16+ years of career progression across Python pipeline engineering,
+            technical supervision, and VFX production leadership at Bubble
+            Creations Digital Studios, Gener8 Digital Media Corp, and Prime
+            Focus (Apr 2010 – Present).
           </p>
         </div>
 
